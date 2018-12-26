@@ -1,0 +1,511 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Notham";
+  src: url(../fonts/nova.otf);
+}
+button {
+  cursor: pointer;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.foto-fluid {
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  background: url("../img/bg/bg-header.png") no-repeat center top/cover;
+  padding: 42px 0 66px;
+}
+
+nav {
+  margin-bottom: 156px;
+}
+
+.logo-text {
+  color: #fff;
+  line-height: 80%;
+  margin-left: 15px;
+}
+.logo-text p {
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.logo-text span {
+  font-size: 15.75px;
+}
+
+.menu p {
+  color: #fff;
+  margin-right: 18px;
+  text-transform: uppercase;
+}
+
+.menu-burger {
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+.menu-burger::after {
+  content: " ";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #fff;
+}
+.menu-burger::before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  margin-top: -5px;
+  background-color: #fff;
+}
+
+.header-center-text {
+  font-weight: 300;
+}
+.header-center-text p {
+  font-size: 33px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 41px;
+}
+.header-center-text span {
+  font-size: 33px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-center-text h1 {
+  font-family: "Notham";
+  font-size: 150px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-video {
+  margin-left: -32px;
+}
+
+.play-bdrs-50 {
+  top: 50%;
+  left: 50%;
+  margin-left: -26px;
+  margin-top: -17px;
+}
+
+.play-triagle {
+  top: 50%;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.play-title {
+  font-size: 16px;
+  top: 63%;
+  left: 50%;
+  margin-left: -55px;
+  color: #fff;
+}
+
+.panteon-bg {
+  width: 20px;
+  position: absolute;
+  line-height: 282%;
+  top: -9%;
+  left: -20.5%;
+}
+.panteon-bg span {
+  opacity: 0.2;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
+
+.olimp-bg {
+  width: 20px;
+  position: absolute;
+  line-height: 282%;
+  top: -9%;
+  left: -13%;
+}
+.olimp-bg span {
+  opacity: 0.4;
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+
+.button-down {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #ab1c61;
+  line-height: 75px;
+  text-align: center;
+}
+.button-down span {
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+.numbers {
+  padding-top: 54px;
+  padding-bottom: 55px;
+  background-color: #fff5f8;
+  margin-bottom: 86px;
+}
+
+.number p:first-child {
+  font-size: 48px;
+  color: #e12457;
+  font-weight: bold;
+}
+.number p:last-child {
+  font-size: 13px;
+  color: #222;
+}
+
+h1 {
+  color: #e12457;
+  font-size: 60px;
+}
+
+.mars-subs {
+  margin-bottom: 374px;
+  position: relative;
+}
+.mars-subs h3 {
+  font-size: 24px;
+  margin: 48px 0 29px;
+}
+.mars-subs p {
+  color: #4d4d4d;
+}
+
+.horizontal-hr {
+  width: 100vw;
+  left: -140px;
+  z-index: -1;
+  position: absolute;
+  bottom: -170px;
+}
+
+.earth {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  line-height: 150px;
+  text-align: center;
+  border: solid 5px #e12457;
+  bottom: -35px;
+  right: 500px;
+  background-color: #fff;
+}
+.earth p {
+  color: #e12457;
+  font-weight: bold;
+}
+
+.korabl {
+  position: absolute;
+  left: 1000px;
+  bottom: 24px;
+}
+.korabl p {
+  color: #e12457;
+  line-height: 3;
+  font-size: 24px;
+}
+.korabl span {
+  margin-left: 15px;
+}
+
+.mars {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  line-height: 78px;
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+  border: solid 5px #e12457;
+  right: 118px;
+  bottom: 169px;
+}
+.mars p {
+  color: #e12457;
+  font-weight: bold;
+}
+
+.info-ilon {
+  padding-bottom: 71px;
+}
+
+.info-ilon p:nth-child(2) {
+  color: #e12457;
+  font-weight: 700;
+  position: relative;
+}
+.info-ilon p:nth-child(2)::before {
+  content: "‘‘";
+  font-size: 60px;
+  color: #e12457;
+  font-family: "Notham", sans-serif;
+  position: absolute;
+  left: -60px;
+  top: -13px;
+}
+
+.foto-ilonMask::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 10px #e12457;
+  z-index: -1;
+  top: -46px;
+  right: -51px;
+}
+
+.fly {
+  background: url(../img/raketa-bg.png) no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+  margin-bottom: 165px;
+}
+
+.pad-60 {
+  padding: 60px 0;
+}
+.pad-60 h4 {
+  font-size: 24px;
+}
+
+.raketa-img {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+  height: 100%;
+}
+
+.price-flight {
+  display: flex;
+  align-items: center;
+}
+.price-flight button {
+  width: 170px;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  color: #e12457;
+  box-shadow: 0px 0px 35px #fff;
+  font-weight: 700;
+}
+
+.price-flight p {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5%;
+}
+.price-flight p:first-child {
+  font-size: 60px;
+}
+.price-flight p:nth-child(2) {
+  font-size: 24px;
+  width: 220px;
+  border-bottom: 1px solid #fff;
+}
+
+.text-price {
+  width: 76%;
+}
+
+.stars {
+  padding-top: 110px;
+  background: url(../img/stars-bg.png) no-repeat center center/cover;
+}
+.stars h1 {
+  font-size: 59px;
+  margin-bottom: 63px;
+  color: #fff;
+}
+.stars .stars-video {
+  position: relative;
+  margin-bottom: 76px;
+}
+.stars .stars-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.stars-info p {
+  color: #908bb1;
+}
+.stars-info p:first-child {
+  color: #fff;
+}
+
+.sybvol {
+  width: 10px;
+  height: 10px;
+  font-family: "Notham", sans-serif;
+  border-left: solid 1px #fff;
+  border-right: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px #fff;
+  display: inline-block;
+  transform: rotate(222deg);
+}
+
+.sybvols {
+  margin-left: 20px;
+}
+.sybvols .sybvol:last-child {
+  border-left: solid 1px rgba(255, 255, 255, 0.4);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+.sybvols .sybvol:nth-child(2) {
+  border-left: solid 1px rgba(255, 255, 255, 0.8);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.8);
+}
+
+.next_sybvol {
+  position: relative;
+}
+
+.next_sybvol::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  font-family: "Notham", sans-serif;
+  border-left: solid 1px #908bb1;
+  border-right: solid 1px transparent;
+  border-top: solid 1px transparent;
+  border-bottom: solid 1px #908bb1;
+  display: inline-block;
+  position: absolute;
+  transform: rotate(222deg);
+  top: 7px;
+  left: 178px;
+}
+
+.stars-info-text h3 {
+  color: #fff;
+  font-size: 24px;
+}
+.stars-info-text p {
+  color: #fff;
+}
+
+.organization {
+  padding-top: 110px;
+  padding-bottom: 162px;
+}
+.organization h1 {
+  margin-bottom: 51px;
+}
+.organization h4 {
+  font-size: 24px;
+}
+.organization button {
+  width: 145px;
+  border: none;
+  outline: none;
+  background-color: #e12457;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 0;
+}
+
+.line {
+  background-color: #e12457;
+  height: 600px;
+  width: 3px;
+}
+.line-icon {
+  padding-left: 35px;
+  position: relative;
+  width: 150px;
+  transform: translateY(-16px);
+}
+.line-icon::before {
+  content: " ";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: solid 3px #e12457;
+  position: absolute;
+  left: -6px;
+  top: 10px;
+  display: inline-block;
+}
+.line .text-icon::after {
+  content: "Проживание";
+  position: absolute;
+  font-size: 20px;
+  color: #e12457;
+  transform: rotate(-90deg);
+  left: -12px;
+  top: 89px;
+  font-weight: bold;
+}
+
+.line-icon:nth-child(2) {
+  margin-top: 230px;
+  margin-bottom: 100px;
+}
+
+.line-icon:nth-child(3) {
+  margin-bottom: 77px;
+}
+
+.line-icon:nth-child(4) {
+  margin-bottom: 81px;
+}
+
+.line-icon:first-child::before {
+  background-color: #e12457;
+}
+
+.vnutr-raketa {
+  margin-bottom: 41px;
+}
+
+footer {
+  background: url(../img/bg/footer-bg.png) no-repeat center top/cover;
+  height: 119vh;
+}
+
+/*# sourceMappingURL=main.css.map */
