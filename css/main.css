@@ -295,7 +295,7 @@ h1 {
 }
 
 .fly {
-  background: url(../img/raketa-bg.png) no-repeat center center/cover;
+  background: url(../img/raketa-bg.jpg) no-repeat center center/cover;
   color: #fff;
   position: relative;
   margin-bottom: 165px;
@@ -352,7 +352,7 @@ h1 {
 
 .stars {
   padding-top: 110px;
-  background: url(../img/stars-bg.png) no-repeat center center/cover;
+  background: url(../img/stars-bg.jpg) no-repeat center center/cover;
 }
 .stars h1 {
   font-size: 59px;
@@ -504,7 +504,7 @@ h1 {
 }
 
 footer {
-  background: url(../img/bg/footer-bg.png) no-repeat center top/cover;
+  background: url(../img/bg/footer-bg.jpg) no-repeat center top/cover;
   height: 119vh;
 }
 
