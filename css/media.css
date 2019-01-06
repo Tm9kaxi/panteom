@@ -1,8 +1,4 @@
 @media only screen and (max-width: 992px){
-	header{
-		margin-left: -38px;
-		    background: url(../img/bg/bg-header.png) no-repeat center top/100% 100%;
-	}
 	.vw-960{
 		display: none;
 	}
