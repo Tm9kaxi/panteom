@@ -288,12 +288,107 @@ legend {
   padding-left: 0;
 }
 
- .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+ .col-10, .col-12, .col-3, .col-7, .col-8, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-12, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-8, .col-md-9, .col-sm-12, .col-sm-3, .col-sm-7 {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 @media (min-width: 992px) {
 
@@ -384,6 +479,13 @@ legend {
   to {
     background-position: 0 0;
   }
+}
+
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .align-top {
@@ -494,6 +596,7 @@ legend {
   font-family: "Notham";
   src: url(../fonts/nova.otf);
 }
+
 button {
   cursor: pointer;
 }
@@ -623,7 +726,7 @@ nav {
   width: 20px;
   position: absolute;
   line-height: 282%;
-  top: -9%;
+  top: -50px;
   left: -20.5%;
 }
 .panteon-bg span {
@@ -700,11 +803,11 @@ h1 {
 }
 
 .horizontal-hr {
-  width: 100vw;
-  left: -140px;
+  width: 100%;
   z-index: -1;
-  position: absolute;
-  bottom: -170px;
+  position: relative;
+  height: 1px;
+  top: -500px;
 }
 
 .earth {
@@ -715,8 +818,8 @@ h1 {
   line-height: 150px;
   text-align: center;
   border: solid 5px #e12457;
-  bottom: -35px;
   right: 500px;
+  top: 270px;
   background-color: #fff;
 }
 .earth p {
@@ -726,8 +829,8 @@ h1 {
 
 .korabl {
   position: absolute;
-  left: 1000px;
-  bottom: 24px;
+  left: 73%;
+  top: 255px;
 }
 .korabl p {
   color: #e12457;
@@ -748,7 +851,7 @@ h1 {
   background-color: #fff;
   border: solid 5px #e12457;
   right: 118px;
-  bottom: 169px;
+  top: 143px;
 }
 .mars p {
   color: #e12457;
@@ -793,22 +896,28 @@ h1 {
 }
 
 .pad-60 {
-  padding: 60px 0;
+  padding: 15px 0;
 }
 .pad-60 h4 {
   font-size: 24px;
+}
+
+.text-price {
+  font-size: 20px;
 }
 
 .raketa-img {
   position: absolute;
   left: 30px;
   top: -30px;
-  height: 100%;
 }
 
 .price-flight {
+  padding-top: 55px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  max-width: 1005px;
 }
 .price-flight button {
   width: 170px;
@@ -826,15 +935,17 @@ h1 {
 .price-flight p {
   font-family: sans-serif;
   font-weight: normal;
-  margin-right: 5%;
+  width: 146px;
 }
 .price-flight p:first-child {
+  width: 181px;
   font-size: 60px;
 }
 .price-flight p:nth-child(2) {
   font-size: 24px;
   width: 220px;
   border-bottom: 1px solid #fff;
+  margin: 0 25px;
 }
 
 .text-price {
@@ -945,9 +1056,9 @@ h1 {
   width: 3px;
 }
 .line-icon {
+  width: 61px;
   padding-left: 35px;
   position: relative;
-  width: 150px;
   transform: translateY(-16px);
 }
 .line-icon::before {
